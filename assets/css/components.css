@@ -1247,6 +1247,7 @@
 
 /* ---------- التذييل ---------- */
 .site-footer {
+  margin-top: auto;
   padding-block: var(--sp-8) var(--sp-5);
   color: rgba(255, 255, 255, 0.7);
   background: var(--c-brown-deep);
@@ -1387,7 +1388,7 @@
 .error-page {
   display: grid;
   place-items: center;
-  min-height: 60vh;
+  flex: 1;
   padding-block: var(--sp-8);
   text-align: center;
 }
