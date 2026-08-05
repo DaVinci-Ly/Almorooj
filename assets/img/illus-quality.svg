@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img"
+     aria-label="رسم توضيحي لفحص جودة حبوب القمح">
+  <defs>
+    <g id="kernel">
+      <ellipse rx="10" ry="14" fill="#cdb376" stroke="#2f0f06" stroke-width="2.4"/>
+      <path d="M0-11v22" fill="none" stroke="#2f0f06" stroke-width="2" opacity="0.55"/>
+    </g>
+  </defs>
+
+  <circle cx="200" cy="150" r="118" fill="#e6eeeb"/>
+
+  <!-- حبوب متناثرة على السطح -->
+  <g>
+    <use href="#kernel" transform="translate(112 250) rotate(-22)"/>
+    <use href="#kernel" transform="translate(146 256) rotate(12)"/>
+    <use href="#kernel" transform="translate(258 252) rotate(-8)"/>
+    <use href="#kernel" transform="translate(292 258) rotate(26)"/>
+  </g>
+  <path d="M76 272h248" fill="none" stroke="#2f0f06" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- مقبض العدسة -->
+  <path d="M244 194l52 52" fill="none" stroke="#2f0f06" stroke-width="14" stroke-linecap="round"/>
+  <path d="M262 212l34 34" fill="none" stroke="#a8873f" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- العدسة -->
+  <circle cx="188" cy="138" r="76" fill="#fbf8f3" stroke="#2f0f06" stroke-width="7"/>
+  <circle cx="188" cy="138" r="62" fill="none" stroke="#5c857b" stroke-width="2" opacity="0.28"/>
+
+  <!-- حبوب مكبّرة داخل العدسة -->
+  <g transform="translate(188 138) scale(1.5)">
+    <use href="#kernel" transform="translate(-20 -6) rotate(-16)"/>
+    <use href="#kernel" transform="translate(6 -14) rotate(10)"/>
+    <use href="#kernel" transform="translate(14 12) rotate(-6)"/>
+  </g>
+
+  <!-- علامة اعتماد -->
+  <circle cx="300" cy="88" r="30" fill="#5c857b"/>
+  <path d="M287 88l9 9 18-19" fill="none" stroke="#ffffff" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

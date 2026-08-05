@@ -1,0 +1,12 @@
+# ملفات النظام
+.DS_Store
+Thumbs.db
+
+# محرّرات
+.vscode/
+.idea/
+*.swp
+
+# ملفات مؤقتة
+*.log
+node_modules/

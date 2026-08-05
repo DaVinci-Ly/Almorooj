@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="كيس دقيق القمح">
+  <defs>
+    <g id="w" stroke-linecap="round">
+      <path d="M0 0V-40" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M0-40c2.8-3.2 2.8-9 0-13.2-2.8 4.2-2.8 10 0 13.2z" fill="currentColor"/>
+      <path d="M0-20c4.6-1.4 7.4-6.2 7.4-11-4.6 1.4-7.4 6.2-7.4 11z" fill="currentColor"/>
+      <path d="M0-20c-4.6-1.4-7.4-6.2-7.4-11 4.6 1.4 7.4 6.2 7.4 11z" fill="currentColor"/>
+      <path d="M0-28c4.6-1.4 7.4-6.2 7.4-11-4.6 1.4-7.4 6.2-7.4 11z" fill="currentColor"/>
+      <path d="M0-28c-4.6-1.4-7.4-6.2-7.4-11 4.6 1.4 7.4 6.2 7.4 11z" fill="currentColor"/>
+      <path d="M0-36c4.6-1.4 7.4-6.2 7.4-11-4.6 1.4-7.4 6.2-7.4 11z" fill="currentColor"/>
+      <path d="M0-36c-4.6-1.4-7.4-6.2-7.4-11 4.6 1.4 7.4 6.2 7.4 11z" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <circle cx="110" cy="106" r="92" fill="#e0eae7"/>
+
+  <!-- كومة دقيق أمام الكيس -->
+  <path d="M28 182c14-4 26-12 40-12s24 10 38 12z" fill="#fbf8f3" stroke="#2f0f06" stroke-width="2.5"
+        stroke-linejoin="round"/>
+
+  <g transform="translate(116 182)">
+    <path d="M-48 0c-3-54 1.5-80 8.5-97-10-7-7-18.5 4.5-21.5 21.5-5.5 47-5.5 68.5 0 11.5 3 14.5 14.5 4.5 21.5 7 17 11.5 43 8.5 97z"
+          fill="#fbf8f3" stroke="#2f0f06" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M-39 -97h78" fill="none" stroke="#a8873f" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M-42 -30h84" fill="none" stroke="#e7dfd2" stroke-width="3"/>
+    <g color="#cdb376" transform="translate(0 -44)">
+      <use href="#w"/>
+    </g>
+  </g>
+
+  <path d="M22 182h176" fill="none" stroke="#2f0f06" stroke-width="3" stroke-linecap="round"/>
+</svg>

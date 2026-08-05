@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 540" role="img"
+     aria-label="رسم توضيحي لصوامع حبوب وسنابل قمح وكيس دقيق">
+  <defs>
+    <!-- سنبلة قمح: القاعدة عند نقطة الأصل وتنمو للأعلى -->
+    <g id="wheat-stalk" stroke-linecap="round">
+      <path d="M0 0V-46" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M0-14c-6.5.4-10.5 4-12 9.6 6-.4 10.4-3.6 12-9.6z" fill="currentColor"/>
+      <path d="M0-20c6.5.4 10.5 4 12 9.6-6-.4-10.4-3.6-12-9.6z" fill="currentColor"/>
+      <path d="M0-46c3-3.4 3-9.6 0-14-3 4.4-3 10.6 0 14z" fill="currentColor"/>
+      <path d="M0-24c5-1.4 8-6.6 8-11.6-5 1.4-8 6.6-8 11.6z" fill="currentColor"/>
+      <path d="M0-24c-5-1.4-8-6.6-8-11.6 5 1.4 8 6.6 8 11.6z" fill="currentColor"/>
+      <path d="M0-32c5-1.4 8-6.6 8-11.6-5 1.4-8 6.6-8 11.6z" fill="currentColor"/>
+      <path d="M0-32c-5-1.4-8-6.6-8-11.6 5 1.4 8 6.6 8 11.6z" fill="currentColor"/>
+      <path d="M0-40c5-1.4 8-6.6 8-11.6-5 1.4-8 6.6-8 11.6z" fill="currentColor"/>
+      <path d="M0-40c-5-1.4-8-6.6-8-11.6 5 1.4 8 6.6 8 11.6z" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <!-- الخلفية -->
+  <circle cx="300" cy="250" r="241" fill="none" stroke="#a8873f" stroke-width="2"
+          stroke-dasharray="2 11" opacity="0.35"/>
+  <circle cx="300" cy="250" r="225" fill="#e6eeeb"/>
+  <circle cx="300" cy="152" r="64" fill="#e8d5a8"/>
+
+  <!-- الأرض -->
+  <path d="M116.4 380a225 225 0 0 0 367.2 0z" fill="#d9e5e1"/>
+  <g fill="none" stroke="#5c857b" stroke-width="2.5" stroke-linecap="round" opacity="0.2">
+    <path d="M150 402q150-14 300 0"/>
+    <path d="M172 428q128-12 256 0"/>
+    <path d="M204 452q96-10 192 0"/>
+  </g>
+
+  <!-- الصوامع -->
+  <g fill="#fbf8f3" stroke="#2f0f06" stroke-width="3" stroke-linejoin="round">
+    <path d="M196 380V204a29 29 0 0 1 58 0v176z"/>
+    <path d="M262 380V181a36 36 0 0 1 72 0v199z"/>
+    <path d="M342 380V214a29 29 0 0 1 58 0v166z"/>
+  </g>
+  <rect x="292" y="130" width="14" height="16" rx="4" fill="#2f0f06"/>
+  <g stroke="#5c857b" stroke-width="2" opacity="0.32">
+    <path d="M197 252h56M263 232h70M343 262h56M197 312h56M263 296h70M343 320h56"/>
+  </g>
+  <path d="M288 380v-36a10 10 0 0 1 20 0v36z" fill="#e6eeeb" stroke="#2f0f06" stroke-width="2.5"/>
+  <path d="M254 214h88" fill="none" stroke="#2f0f06" stroke-width="3" stroke-linecap="round"/>
+  <path d="M334 226h8" fill="none" stroke="#2f0f06" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- سنابل القمح -->
+  <g color="#a8873f">
+    <use href="#wheat-stalk" transform="translate(476 382) scale(1.9) rotate(7)"/>
+  </g>
+  <g color="#cdb376">
+    <use href="#wheat-stalk" transform="translate(418 384) scale(2.05) rotate(-6)"/>
+    <use href="#wheat-stalk" transform="translate(448 383) scale(2.35)"/>
+  </g>
+
+  <!-- كيس الدقيق -->
+  <g transform="translate(166 384)">
+    <path d="M-33 0c-2-38 1-56 6-68-7-5-5-13 3-15 15-4 33-4 48 0 8 2 10 10 3 15 5 12 8 30 6 68z"
+          fill="#fbf8f3" stroke="#2f0f06" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M-27 -68h54" fill="none" stroke="#a8873f" stroke-width="3" stroke-linecap="round"/>
+    <g color="#cdb376" transform="translate(0 -14) scale(0.62)">
+      <use href="#wheat-stalk"/>
+    </g>
+  </g>
+
+  <!-- خط الأفق -->
+  <path d="M118 380h364" fill="none" stroke="#2f0f06" stroke-width="3" stroke-linecap="round"/>
+</svg>

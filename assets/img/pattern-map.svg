@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- نمط تجريدي يشبه شبكة الطرق — خلفية صندوق الخريطة قبل تحميلها -->
+  <g fill="none" stroke="#5c857b" stroke-width="1.2" opacity="0.16">
+    <path d="M-10 40h220M-10 128h220M32 -10v220M148 -10v220"/>
+    <path d="M-10 84h90v44h130" stroke-width="2"/>
+    <path d="M90 -10v50h58v52"/>
+    <circle cx="32" cy="40" r="3"/>
+    <circle cx="148" cy="128" r="3"/>
+    <circle cx="90" cy="84" r="3"/>
+  </g>
+</svg>

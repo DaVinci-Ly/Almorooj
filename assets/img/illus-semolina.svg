@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="سميد ونخالة قمح">
+  <defs>
+    <g id="w" stroke-linecap="round">
+      <path d="M0 0V-40" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M0-40c2.8-3.2 2.8-9 0-13.2-2.8 4.2-2.8 10 0 13.2z" fill="currentColor"/>
+      <path d="M0-20c4.6-1.4 7.4-6.2 7.4-11-4.6 1.4-7.4 6.2-7.4 11z" fill="currentColor"/>
+      <path d="M0-20c-4.6-1.4-7.4-6.2-7.4-11 4.6 1.4 7.4 6.2 7.4 11z" fill="currentColor"/>
+      <path d="M0-28c4.6-1.4 7.4-6.2 7.4-11-4.6 1.4-7.4 6.2-7.4 11z" fill="currentColor"/>
+      <path d="M0-28c-4.6-1.4-7.4-6.2-7.4-11 4.6 1.4 7.4 6.2 7.4 11z" fill="currentColor"/>
+      <path d="M0-36c4.6-1.4 7.4-6.2 7.4-11-4.6 1.4-7.4 6.2-7.4 11z" fill="currentColor"/>
+      <path d="M0-36c-4.6-1.4-7.4-6.2-7.4-11 4.6 1.4 7.4 6.2 7.4 11z" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <circle cx="110" cy="106" r="92" fill="#e0eae7"/>
+
+  <!-- سنابل خلف الوعاء -->
+  <g color="#a8873f" opacity="0.9">
+    <use href="#w" transform="translate(56 150) scale(1.15) rotate(-14)"/>
+    <use href="#w" transform="translate(166 150) scale(1.15) rotate(14)"/>
+  </g>
+
+  <!-- كومة السميد -->
+  <path d="M-46 0c7-32 21-50 46-50s39 18 46 50z" transform="translate(110 138)"
+        fill="#e8d5a8" stroke="#2f0f06" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#a8873f" opacity="0.55">
+    <circle cx="94" cy="118" r="2.6"/>
+    <circle cx="112" cy="106" r="2.6"/>
+    <circle cx="128" cy="122" r="2.6"/>
+    <circle cx="104" cy="130" r="2.6"/>
+    <circle cx="122" cy="98" r="2.6"/>
+  </g>
+
+  <!-- الوعاء -->
+  <path d="M-66 0h132a66 50 0 0 1-132 0z" transform="translate(110 138)"
+        fill="#fbf8f3" stroke="#2f0f06" stroke-width="3.4" stroke-linejoin="round"/>
+  <path d="M44 138h132" fill="none" stroke="#2f0f06" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M62 158h96" fill="none" stroke="#e7dfd2" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M22 190h176" fill="none" stroke="#2f0f06" stroke-width="3" stroke-linecap="round"/>
+</svg>

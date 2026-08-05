@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- نمط خلفية: سنابل قمح متفرقة بشفافية منخفضة -->
+  <defs>
+    <g id="stalk" fill="#5c857b" stroke="#5c857b" stroke-width="1.4" stroke-linecap="round">
+      <path d="M0 46 L0 16" fill="none"/>
+      <path d="M0 16c2.4-2.6 2.4-7.4 0-11-2.4 3.6-2.4 8.4 0 11z" stroke="none"/>
+      <path d="M0 22c4-.8 6.4-4.8 6.4-8.8-4 .8-6.4 4.8-6.4 8.8z" stroke="none"/>
+      <path d="M0 22c-4-.8-6.4-4.8-6.4-8.8 4 .8 6.4 4.8 6.4 8.8z" stroke="none"/>
+      <path d="M0 29c4-.8 6.4-4.8 6.4-8.8-4 .8-6.4 4.8-6.4 8.8z" stroke="none"/>
+      <path d="M0 29c-4-.8-6.4-4.8-6.4-8.8 4 .8 6.4 4.8 6.4 8.8z" stroke="none"/>
+      <path d="M0 36c4-.8 6.4-4.8 6.4-8.8-4 .8-6.4 4.8-6.4 8.8z" stroke="none"/>
+      <path d="M0 36c-4-.8-6.4-4.8-6.4-8.8 4 .8 6.4 4.8 6.4 8.8z" stroke="none"/>
+    </g>
+  </defs>
+  <g opacity="0.07">
+    <use href="#stalk" transform="translate(32 26) rotate(-12)"/>
+    <use href="#stalk" transform="translate(132 66) rotate(14)"/>
+    <use href="#stalk" transform="translate(74 122) rotate(6)"/>
+    <use href="#stalk" transform="translate(174 152) rotate(-8)"/>
+    <use href="#stalk" transform="translate(8 158) rotate(18)"/>
+  </g>
+</svg>

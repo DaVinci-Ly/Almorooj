@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="أعلاف مركّزة معبأة">
+  <circle cx="110" cy="106" r="92" fill="#e0eae7"/>
+
+  <!-- كيس العلف -->
+  <g transform="translate(110 184)">
+    <path d="M-52 0v-118h104V0z" fill="#fbf8f3" stroke="#2f0f06" stroke-width="3.4"
+          stroke-linejoin="round"/>
+    <path d="M-52 -118l10-14h84l10 14z" fill="#e6eeeb" stroke="#2f0f06" stroke-width="3.4"
+          stroke-linejoin="round"/>
+    <path d="M-52 -74h104M-52 -46h104" fill="none" stroke="#e7dfd2" stroke-width="3"/>
+    <path d="M-52 -60h104" fill="none" stroke="#a8873f" stroke-width="3.4"/>
+
+    <!-- حبيبات العلف داخل الكيس -->
+    <g fill="#a8873f">
+      <rect x="-34" y="-108" width="9" height="19" rx="4.5" transform="rotate(-16 -29.5 -98.5)"/>
+      <rect x="-16" y="-110" width="9" height="19" rx="4.5" transform="rotate(10 -11.5 -100.5)"/>
+      <rect x="3" y="-108" width="9" height="19" rx="4.5" transform="rotate(-8 7.5 -98.5)"/>
+      <rect x="21" y="-110" width="9" height="19" rx="4.5" transform="rotate(18 25.5 -100.5)"/>
+    </g>
+
+    <!-- حبيبات متناثرة على الأرض -->
+    <g fill="#cdb376">
+      <rect x="60" y="-19" width="9" height="19" rx="4.5" transform="rotate(70 64.5 -9.5)"/>
+      <rect x="76" y="-15" width="9" height="19" rx="4.5" transform="rotate(100 80.5 -5.5)"/>
+      <rect x="-78" y="-17" width="9" height="19" rx="4.5" transform="rotate(-75 -73.5 -7.5)"/>
+    </g>
+  </g>
+
+  <path d="M18 184h184" fill="none" stroke="#2f0f06" stroke-width="3" stroke-linecap="round"/>
+</svg>

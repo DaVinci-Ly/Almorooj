@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" role="img"
+     aria-label="رسم توضيحي لمبنى المطحنة وصوامع تخزين الحبوب">
+  <defs>
+    <g id="w" stroke-linecap="round">
+      <path d="M0 0V-34" fill="none" stroke="currentColor" stroke-width="2.6"/>
+      <path d="M0-34c2.4-2.8 2.4-7.8 0-11.4-2.4 3.6-2.4 8.6 0 11.4z" fill="currentColor"/>
+      <path d="M0-17c4-1.2 6.4-5.4 6.4-9.6-4 1.2-6.4 5.4-6.4 9.6z" fill="currentColor"/>
+      <path d="M0-17c-4-1.2-6.4-5.4-6.4-9.6 4 1.2 6.4 5.4 6.4 9.6z" fill="currentColor"/>
+      <path d="M0-24c4-1.2 6.4-5.4 6.4-9.6-4 1.2-6.4 5.4-6.4 9.6z" fill="currentColor"/>
+      <path d="M0-24c-4-1.2-6.4-5.4-6.4-9.6 4 1.2 6.4 5.4 6.4 9.6z" fill="currentColor"/>
+      <path d="M0-31c4-1.2 6.4-5.4 6.4-9.6-4 1.2-6.4 5.4-6.4 9.6z" fill="currentColor"/>
+      <path d="M0-31c-4-1.2-6.4-5.4-6.4-9.6 4 1.2 6.4 5.4 6.4 9.6z" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <!-- قرص خلفي هادئ -->
+  <circle cx="300" cy="150" r="118" fill="#e6eeeb"/>
+
+  <!-- ممر النقل بين المطحنة والصوامع -->
+  <path d="M150 150h96l58-26 62 30" fill="none" stroke="#5c857b" stroke-width="3.5"
+        stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+
+  <!-- الصوامع -->
+  <g fill="#fbf8f3" stroke="#2f0f06" stroke-width="3.4" stroke-linejoin="round">
+    <path d="M212 268V186a25 25 0 0 1 50 0v82z"/>
+    <path d="M272 268V166a30 30 0 0 1 60 0v102z"/>
+    <path d="M344 268V196a24 24 0 0 1 48 0v72z"/>
+  </g>
+  <rect x="295" y="122" width="14" height="16" rx="4" fill="#2f0f06"/>
+  <g stroke="#5c857b" stroke-width="2" opacity="0.3">
+    <path d="M213 216h48M273 202h58M345 226h46M213 244h48M273 236h58M345 250h46"/>
+  </g>
+  <path d="M292 268v-26a10 10 0 0 1 20 0v26z" fill="#e6eeeb" stroke="#2f0f06" stroke-width="2.6"/>
+
+  <!-- مبنى المطحنة -->
+  <path d="M46 268V176h130v92z" fill="#fbf8f3" stroke="#2f0f06" stroke-width="3.4"
+        stroke-linejoin="round"/>
+  <path d="M34 178l77-46 77 46z" fill="#e6eeeb" stroke="#2f0f06" stroke-width="3.4"
+        stroke-linejoin="round"/>
+  <path d="M96 268v-40a15 15 0 0 1 30 0v40z" fill="#e6eeeb" stroke="#2f0f06" stroke-width="2.8"/>
+  <g fill="#e8d5a8" stroke="#2f0f06" stroke-width="2.6">
+    <rect x="62" y="196" width="24" height="24" rx="3"/>
+    <rect x="136" y="196" width="24" height="24" rx="3"/>
+  </g>
+  <path d="M111 152v-16" fill="none" stroke="#a8873f" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- سنابل عند الأطراف -->
+  <g color="#a8873f">
+    <use href="#w" transform="translate(412 268) scale(1.2) rotate(8)"/>
+    <use href="#w" transform="translate(26 268) scale(1.1) rotate(-10)"/>
+  </g>
+
+  <path d="M14 268h412" fill="none" stroke="#2f0f06" stroke-width="3.2" stroke-linecap="round"/>
+</svg>
