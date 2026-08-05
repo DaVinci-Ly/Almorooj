@@ -117,29 +117,7 @@
     document.documentElement.style.setProperty('--origin', isRTL ? 'right' : 'left');
   }
 
-  /* ---------- 6. تحميل الخريطة عند الطلب ---------- */
-  /* الخريطة لا تُحمّل إلا بضغطة من الزائر — يوفّر عشرات الكيلوبايتات
-     ويمنع أي طلب لطرف ثالث قبل موافقة المستخدم. */
-  function initMap() {
-    document.querySelectorAll('.map__placeholder').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var wrap = btn.closest('.map');
-        var src = wrap.getAttribute('data-map-src');
-        if (!src) return;
-
-        var frame = document.createElement('iframe');
-        frame.src = src;
-        frame.loading = 'lazy';
-        frame.title = btn.getAttribute('data-map-title') || 'خريطة الموقع';
-        frame.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
-        frame.setAttribute('allowfullscreen', '');
-        wrap.appendChild(frame);
-        btn.remove();
-      });
-    });
-  }
-
-  /* ---------- 7. نموذج التواصل ---------- */
+  /* ---------- 6. نموذج التواصل ---------- */
   function initForm() {
     var form = document.querySelector('[data-contact-form]');
     if (!form) return;
@@ -258,7 +236,6 @@
     initHeaderShadow();
     initReveal();
     initYear();
-    initMap();
     initForm();
   }
 
