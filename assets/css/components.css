@@ -984,26 +984,34 @@
 }
 
 /* ---------- بطاقات التواصل ---------- */
-/* عمودان بدل أربعة — بطاقات أوسع وأكثر راحة للعين من صفّ ضيّق بأربع أعمدة */
 .contact-grid {
+  display: grid;
+  gap: var(--sp-4);
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 32em) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 58em) {
+  .contact-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .contact-card {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: var(--sp-4);
-  padding: var(--sp-5);
+  gap: 0.85rem;
+  padding: 0.85rem 1.1rem;
+  height: 100%;
   background: var(--c-paper);
   border: 1px solid var(--c-line);
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
   transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
     transform var(--dur) var(--ease);
 }
@@ -1020,6 +1028,7 @@
 .contact-card--link:hover {
   box-shadow: var(--shadow);
   transform: translateY(-2px);
+  border-color: var(--c-sage);
 }
 
 .contact-card--link:hover .contact-card__icon {
@@ -1034,29 +1043,32 @@
 .contact-card__icon {
   display: grid;
   place-items: center;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.5rem;
+  height: 2.5rem;
   flex: none;
   color: var(--c-brown);
   background: var(--c-sage-tint);
-  border-radius: var(--radius);
+  border-radius: 10px;
   transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
 }
 
 .contact-card__icon svg {
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
 }
 
 .contact-card h3 {
-  font-size: 1.02rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-block-end: 0.2rem;
   transition: color var(--dur) var(--ease);
 }
 
 .contact-card p {
-  font-size: 0.95rem;
+  font-size: 0.86rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* ---------- النموذج ---------- */
