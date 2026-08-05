@@ -171,7 +171,7 @@
           • لاستقبال الرسائل في بريدك مباشرة، أنشئ نموذجاً في Formspree
             وضع رابطه في action، مثال: action="https://formspree.io/f/xxxxxxx"
         -->
-        <form class="form" data-contact-form action="" method="post"
+        <form class="form" data-contact-form action="https://formsubmit.co/info@almorooj.ly" method="post"
               data-mailto="info@almorooj.ly"
               data-mail-subject="طلب عرض سعر من الموقع"
               data-msg-required="هذا الحقل مطلوب"
@@ -180,6 +180,10 @@
               data-msg-success="وصلتنا رسالتك، وسنعاود التواصل معك في أقرب وقت."
               data-msg-error="تعذّر الإرسال. جرّب مرة أخرى أو راسلنا على البريد مباشرة."
               style="margin-block-start: var(--sp-6)">
+
+          <input type="hidden" name="_subject" value="طلب عرض سعر جديد من موقع المروج الخضراء">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
 
           <div class="form__row form__row--2">
             <div class="field">

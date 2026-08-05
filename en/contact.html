@@ -172,7 +172,7 @@
           • To receive messages in your inbox instead, create a form on Formspree and put its
             URL in action, e.g. action="https://formspree.io/f/xxxxxxx"
         -->
-        <form class="form" data-contact-form action="" method="post"
+        <form class="form" data-contact-form action="https://formsubmit.co/info@almorooj.ly" method="post"
               data-mailto="info@almorooj.ly"
               data-mail-subject="Quote request from the website"
               data-msg-required="This field is required"
@@ -181,6 +181,10 @@
               data-msg-success="Your message has reached us. We will get back to you shortly."
               data-msg-error="Sending failed. Please try again or email us directly."
               style="margin-block-start: var(--sp-6)">
+
+          <input type="hidden" name="_subject" value="New quote request from Al Morooj website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
 
           <div class="form__row form__row--2">
             <div class="field">
