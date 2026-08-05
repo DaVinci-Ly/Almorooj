@@ -984,9 +984,21 @@
 }
 
 /* ---------- بطاقات التواصل ---------- */
+/* عمودان بدل أربعة — بطاقات أوسع وأكثر راحة للعين من صفّ ضيّق بأربع أعمدة */
+.contact-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .contact-card {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--sp-4);
   padding: var(--sp-5);
   background: var(--c-paper);
