@@ -163,13 +163,23 @@ h1 {
   font-size: var(--step-5);
   font-weight: 700;
   line-height: 1.22;
-  letter-spacing: -0.01em;
 }
 
 h2 {
   font-size: var(--step-4);
   line-height: 1.28;
-  letter-spacing: -0.008em;
+}
+
+/* إلغاء تباعد الحروف (letter-spacing) في النصوص العربية على متصفحات أبل (Safari / WebKit) لمنع تفكك الحروف */
+html[lang="ar"],
+[dir="rtl"],
+:lang(ar) {
+  letter-spacing: normal;
+}
+
+[dir="rtl"] *,
+:lang(ar) * {
+  letter-spacing: normal !important;
 }
 
 h3 {

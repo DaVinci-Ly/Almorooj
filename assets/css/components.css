@@ -103,14 +103,12 @@
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--c-brown);
-  letter-spacing: -0.01em;
 }
 
 .brand__sub {
   font-size: 0.72rem;
   font-weight: 500;
   color: var(--c-ink-faint);
-  letter-spacing: 0.02em;
 }
 
 @media (max-width: 26em) {
@@ -401,7 +399,6 @@
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--c-gold);
-  letter-spacing: 0.08em;
 }
 
 .eyebrow::before {
@@ -994,11 +991,31 @@
   background: var(--c-paper);
   border: 1px solid var(--c-line);
   border-radius: var(--radius-lg);
-  transition: border-color var(--dur) var(--ease);
+  transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
 }
 
 .contact-card:hover {
   border-color: var(--c-sage);
+}
+
+/* بطاقة رابط كاملة (هاتف / واتساب / بريد) — كل مساحتها قابلة للضغط */
+.contact-card--link {
+  cursor: pointer;
+}
+
+.contact-card--link:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.contact-card--link:hover .contact-card__icon {
+  color: var(--c-paper);
+  background: var(--c-sage);
+}
+
+.contact-card--link:hover h3 {
+  color: var(--c-sage);
 }
 
 .contact-card__icon {
@@ -1010,6 +1027,7 @@
   color: var(--c-brown);
   background: var(--c-sage-tint);
   border-radius: var(--radius);
+  transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
 }
 
 .contact-card__icon svg {
@@ -1019,17 +1037,13 @@
 
 .contact-card h3 {
   font-size: 1.02rem;
+  transition: color var(--dur) var(--ease);
 }
 
-.contact-card p,
-.contact-card a {
+.contact-card p {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
-}
-
-.contact-card a:hover {
-  color: var(--c-sage);
 }
 
 /* ---------- النموذج ---------- */
@@ -1218,7 +1232,6 @@
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--c-paper);
-  letter-spacing: 0.02em;
 }
 
 .site-footer__grid {
