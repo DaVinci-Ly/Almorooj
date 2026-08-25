@@ -111,11 +111,6 @@
   color: var(--c-ink-faint);
 }
 
-@media (max-width: 26em) {
-  .brand__sub {
-    display: none;
-  }
-}
 
 /* التنقل */
 .nav {
@@ -174,24 +169,31 @@
   display: inline-flex;
   gap: var(--sp-2);
   align-items: center;
-  padding: var(--sp-2) var(--sp-3);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--c-ink-soft);
+  padding: 0.7rem 1.4rem;
+  font-size: 0.97rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--c-brown);
+  background: transparent;
   border: 1px solid var(--c-line);
-  border-radius: 999px;
-  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+  border-radius: var(--radius);
+  transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
 }
 
 .lang-switch:hover {
-  color: var(--c-brown);
+  background: var(--c-sage-tint);
   border-color: var(--c-sage);
+  transform: translateY(-1px);
+}
+
+.lang-switch:active {
+  transform: none;
 }
 
 .lang-switch svg {
-  width: 15px;
-  height: 15px;
-  opacity: 0.65;
+  width: 17px;
+  height: 17px;
+  flex: none;
 }
 
 /* زر القائمة للجوال */
@@ -858,15 +860,21 @@
 
 /* ---------- شريط الدعوة للتواصل ---------- */
 .cta-band {
-  background: var(--c-brown);
-  color: rgba(255, 255, 255, 0.82);
+  padding-block: clamp(var(--sp-6), 6vw, var(--sp-8));
+  background: var(--bg);
 }
 
 .cta-band__inner {
   display: grid;
   gap: var(--sp-5);
   align-items: center;
-  padding-block: clamp(var(--sp-7), 5vw, var(--sp-8));
+  padding: clamp(var(--sp-6), 6vw, var(--sp-8));
+  background-color: var(--c-sage-wash);
+  background-image: url('../img/pattern-wheat.svg');
+  background-size: 320px auto;
+  border: 1px solid var(--c-line);
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 40px -12px rgba(92, 133, 123, 0.2);
 }
 
 @media (min-width: 54em) {
@@ -878,17 +886,40 @@
 
 .cta-band h2 {
   font-size: var(--step-3);
-  color: var(--c-paper);
+  color: var(--c-brown);
 }
 
 .cta-band p {
   margin-block-start: var(--sp-3);
+  color: var(--text-muted);
+  font-size: var(--step-0);
 }
 
 .cta-band__actions {
   display: flex;
   flex-wrap: wrap;
   gap: var(--sp-3);
+}
+
+/* Overriding the buttons for the new light CTA background */
+.cta-band .btn--light {
+  color: var(--c-paper);
+  background: var(--c-brown);
+  border-color: var(--c-brown);
+}
+.cta-band .btn--light:hover {
+  background: var(--c-sage);
+  border-color: var(--c-sage);
+}
+
+.cta-band .btn--wheat {
+  color: var(--c-brown);
+  background: transparent;
+  border-color: var(--c-brown);
+}
+.cta-band .btn--wheat:hover {
+  background: var(--c-sage-tint);
+  border-color: var(--c-sage);
 }
 
 /* ---------- بطاقة الموقع ---------- */
@@ -1264,6 +1295,8 @@
   display: grid;
   gap: var(--sp-6);
 }
+
+
 
 @media (min-width: 44em) {
   .site-footer__grid {
