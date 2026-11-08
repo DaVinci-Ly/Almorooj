@@ -5,32 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>المروج الخضراء العريقة | صناعة الدقيق ومطاحن الأعلاف</title>
-<meta name="description" content="شركة المروج الخضراء العريقة تنتج دقيق القمح والسميد والنخالة والأعلاف المركّزة للدواجن والماشية">
+<meta name="description" content="شركة المروج الخضراء العريقة تنتج دقيق القمح والسميد والنخالة وأعلاف الدواجن والماشية">
 <script>
 (function () {
-  var language = null;
+  var language = 'en';
   try {
-    language = localStorage.getItem('almorooj-language');
+    if (localStorage.getItem('almorooj-language') === 'ar') {
+      language = 'ar';
+    }
   } catch (error) {
     console.warn('Could not read the saved language preference', error);
-  }
-
-  if (language !== 'ar' && language !== 'en') {
-    var preferences = navigator.languages && navigator.languages.length
-      ? navigator.languages
-      : [navigator.language || 'ar'];
-    language = 'ar';
-    for (var i = 0; i < preferences.length; i++) {
-      var preferred = String(preferences[i]).toLowerCase();
-      if (/^ar(?:-|$)/.test(preferred)) {
-        language = 'ar';
-        break;
-      }
-      if (/^en(?:-|$)/.test(preferred)) {
-        language = 'en';
-        break;
-      }
-    }
   }
 
   if (language === 'en' && /^\/(?:index\.html)?$/.test(location.pathname)) {
@@ -43,7 +27,7 @@
 <link rel="canonical" href="https://almorooj.ly/">
 <link rel="alternate" hreflang="ar" href="https://almorooj.ly/">
 <link rel="alternate" hreflang="en" href="https://almorooj.ly/en/">
-<link rel="alternate" hreflang="x-default" href="https://almorooj.ly/">
+<link rel="alternate" hreflang="x-default" href="https://almorooj.ly/en/">
 
 <!-- مشاركة على الشبكات الاجتماعية -->
 <meta property="og:type" content="website">
@@ -51,7 +35,7 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:site_name" content="المروج الخضراء العريقة">
 <meta property="og:title" content="المروج الخضراء العريقة | صناعة الدقيق ومطاحن الأعلاف">
-<meta property="og:description" content="دقيق القمح والسميد والنخالة والأعلاف المركّزة للدواجن والماشية من شركة المروج الخضراء العريقة">
+<meta property="og:description" content="دقيق القمح والسميد والنخالة وأعلاف الدواجن والماشية من شركة المروج الخضراء العريقة">
 <meta property="og:url" content="https://almorooj.ly/">
 <meta property="og:image" content="https://almorooj.ly/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -85,7 +69,7 @@
   "url": "https://almorooj.ly/",
   "logo": "https://almorooj.ly/assets/img/logo.png",
   "image": "https://almorooj.ly/assets/img/og-image.png",
-  "description": "صناعة دقيق القمح بأنواعه والسميد والنخالة والأعلاف المركّزة للدواجن والماشية",
+  "description": "صناعة دقيق القمح بأنواعه والسميد والنخالة وأعلاف الدواجن والماشية",
   "foundingDate": "2022",
   "email": "info@almorooj.ly",
   "telephone": "+218-91-212-7036",
@@ -170,7 +154,7 @@
     <div class="container hero__inner">
       <div>
         <span class="eyebrow">شركة المروج الخضراء العريقة</span>
-        <h1 class="hero__title">دقيق القمح<br>والأعلاف المركّزة</h1>
+        <h1 class="hero__title">دقيق القمح<br>وأعلاف الدواجن والماشية</h1>
         <p class="hero__text">
           تنتج الشركة دقيق القمح والسميد والنخالة، وأعلافاً للدواجن والأبقار والأغنام
         </p>
@@ -247,10 +231,10 @@
 
         <article class="product-card reveal">
           <div class="product-card__figure">
-            <img src="assets/img/illus-feed.svg" alt="أكياس أعلاف مركّزة" width="220" height="220" loading="lazy">
+            <img src="assets/img/illus-feed.svg" alt="أكياس أعلاف للدواجن والماشية" width="220" height="220" loading="lazy">
           </div>
           <div class="product-card__body">
-            <h3>الأعلاف المركّزة</h3>
+            <h3>أعلاف الدواجن والماشية</h3>
             <p>أعلاف للدواجن والأبقار والأغنام، ويمكن التواصل للاستفسار عن المنتجات المتاحة</p>
             <div class="product-card__list">
               <span class="tag">أعلاف دواجن</span>
@@ -406,7 +390,7 @@
         <ul class="footer-links">
           <li><a href="products.html#flour">دقيق القمح</a></li>
           <li><a href="products.html#semolina">السميد والنخالة</a></li>
-          <li><a href="products.html#feed">الأعلاف المركّزة</a></li>
+          <li><a href="products.html#feed">الأعلاف</a></li>
         </ul>
       </nav>
 

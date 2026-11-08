@@ -160,7 +160,7 @@ https://www.google.com/maps/search/?api=1&query=32.711167,13.8285
 | `illus-hero.svg` | واجهة الصفحة الرئيسية |
 | `illus-flour.svg` | دقيق القمح |
 | `illus-semolina.svg` | السميد والنخالة |
-| `illus-feed.svg` | الأعلاف المركّزة |
+| `illus-feed.svg` | أعلاف الدواجن والماشية |
 | `illus-mill.svg` | المصنع (صفحة من نحن) |
 | `illus-quality.svg` | فحص الجودة |
 | `pattern-wheat.svg` | نمط الخلفية الفاتح |
