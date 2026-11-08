@@ -6,6 +6,38 @@
 
 <title>المروج الخضراء العريقة | صناعة الدقيق ومطاحن الأعلاف</title>
 <meta name="description" content="شركة المروج الخضراء العريقة تنتج دقيق القمح والسميد والنخالة والأعلاف المركّزة للدواجن والماشية">
+<script>
+(function () {
+  var language = null;
+  try {
+    language = localStorage.getItem('almorooj-language');
+  } catch (error) {
+    console.warn('Could not read the saved language preference', error);
+  }
+
+  if (language !== 'ar' && language !== 'en') {
+    var preferences = navigator.languages && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language || 'ar'];
+    language = 'ar';
+    for (var i = 0; i < preferences.length; i++) {
+      var preferred = String(preferences[i]).toLowerCase();
+      if (/^ar(?:-|$)/.test(preferred)) {
+        language = 'ar';
+        break;
+      }
+      if (/^en(?:-|$)/.test(preferred)) {
+        language = 'en';
+        break;
+      }
+    }
+  }
+
+  if (language === 'en' && /^\/(?:index\.html)?$/.test(location.pathname)) {
+    location.replace('/en/' + location.search + location.hash);
+  }
+})();
+</script>
 <meta name="author" content="شركة المروج الخضراء العريقة لصناعة الدقيق ومطاحن الأعلاف">
 <meta name="theme-color" content="#2f0f06">
 <link rel="canonical" href="https://almorooj.ly/">

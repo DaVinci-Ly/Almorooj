@@ -7,7 +7,23 @@
 
   var isRTL = document.documentElement.dir !== 'ltr';
 
-  /* ---------- 1. قائمة الجوال ---------- */
+  /* ---------- 1. تذكّر اختيار اللغة ---------- */
+  function initLanguagePreference() {
+    document.querySelectorAll('.lang-switch').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var language = link.getAttribute('hreflang');
+        if (language !== 'ar' && language !== 'en') return;
+
+        try {
+          localStorage.setItem('almorooj-language', language);
+        } catch (error) {
+          console.warn('Could not save the language preference', error);
+        }
+      });
+    });
+  }
+
+  /* ---------- 2. قائمة الجوال ---------- */
   function initNav() {
     var toggle = document.querySelector('.nav-toggle');
     var nav = document.getElementById('primary-nav');
@@ -49,7 +65,7 @@
     });
   }
 
-  /* ---------- 2. ظل الترويسة عند التمرير ---------- */
+  /* ---------- 3. ظل الترويسة عند التمرير ---------- */
   function initHeaderShadow() {
     var header = document.querySelector('.site-header');
     if (!header) return;
@@ -72,7 +88,7 @@
     update();
   }
 
-  /* ---------- 3. ظهور العناصر عند التمرير ---------- */
+  /* ---------- 4. ظهور العناصر عند التمرير ---------- */
   function initReveal() {
     var items = document.querySelectorAll('.reveal');
     if (!items.length) return;
@@ -104,20 +120,20 @@
     });
   }
 
-  /* ---------- 4. سنة النشر في التذييل ---------- */
+  /* ---------- 5. سنة النشر في التذييل ---------- */
   function initYear() {
     document.querySelectorAll('[data-year]').forEach(function (el) {
       el.textContent = String(new Date().getFullYear());
     });
   }
 
-  /* ---------- 5. اتجاه سهم الأزرار حسب اللغة ---------- */
+  /* ---------- 6. اتجاه سهم الأزرار حسب اللغة ---------- */
   function initArrows() {
     document.documentElement.style.setProperty('--arrow-dir', isRTL ? '-3px' : '3px');
     document.documentElement.style.setProperty('--origin', isRTL ? 'right' : 'left');
   }
 
-  /* ---------- 6. نموذج التواصل ---------- */
+  /* ---------- 7. نموذج التواصل ---------- */
   function initForm() {
     var form = document.querySelector('[data-contact-form]');
     if (!form) return;
@@ -231,6 +247,7 @@
 
   /* ---------- التشغيل ---------- */
   function init() {
+    initLanguagePreference();
     initArrows();
     initNav();
     initHeaderShadow();
