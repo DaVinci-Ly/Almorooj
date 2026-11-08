@@ -44,8 +44,8 @@
   --accent: var(--c-gold);
 
   /* التيبوغرافيا */
-  --font-ar: 'IBM Plex Sans Arabic', 'Segoe UI', system-ui, sans-serif;
-  --font-num: 'IBM Plex Sans Arabic', ui-monospace, monospace;
+  --font-ar: 'Cairo', 'Segoe UI', system-ui, sans-serif;
+  --font-num: 'Cairo', ui-monospace, monospace;
 
   --step--1: clamp(0.82rem, 0.79rem + 0.14vw, 0.9rem);
   --step-0: clamp(1rem, 0.97rem + 0.16vw, 1.09rem);

@@ -56,7 +56,7 @@ python3 -m http.server 8000
 │   │   └── components.css   الترويسة، الأزرار، البطاقات، النماذج، التذييل
 │   ├── js/
 │   │   └── main.js          القائمة، ظهور العناصر، والنموذج
-│   ├── fonts/               IBM Plex Sans Arabic بصيغة woff2 (عربي + لاتيني)
+│   ├── fonts/               Cairo بصيغة woff2 (عربي + لاتيني)
 │   └── img/                 الشعار، الأيقونات، الرسومات التوضيحية، الأنماط
 │
 ├── site.webmanifest         بيانات التطبيق للجوال
@@ -133,8 +133,8 @@ https://www.google.com/maps/search/?api=1&query=32.711167,13.8285
 
 ### الخط
 
-**IBM Plex Sans Arabic** بأوزان 400 / 500 / 600 / 700، مستضاف محلياً في `assets/fonts/`
-(رخصة SIL Open Font License 1.1). النطاقان العربي واللاتيني فقط — الحجم الكلي ~208 كيلوبايت.
+**Cairo** بأوزان 400–700، مستضاف محلياً في `assets/fonts/` لتغطية النصين العربي واللاتيني
+(رخصة SIL Open Font License 1.1).
 
 ### الشعار
 
